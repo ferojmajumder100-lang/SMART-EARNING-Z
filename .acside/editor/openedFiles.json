@@ -1,0 +1,35 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/ARAFT/app/src/main/res/layout/activity_main.xml",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 39441,
+          "line": 957
+        },
+        "start": {
+          "column": 0,
+          "index": 39441,
+          "line": 957
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/ARAFT/app/src/main/kotlin/com/my/apk/MainActivity.kt",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": 100684,
+          "line": 1740
+        },
+        "start": {
+          "column": 0,
+          "index": 100684,
+          "line": 1740
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/ARAFT/app/src/main/kotlin/com/my/apk/MainActivity.kt"
+}

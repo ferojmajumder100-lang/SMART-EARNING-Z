@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.my.apk'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.my.apk"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.5"
+        
+        // ডেক্স সাইজ বড় হলেও যাতে কোনো এরর না আসে
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        debugConfig {
+            storeFile file("${rootDir}/debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debugConfig
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    // মিউজিক (.webm) ফাইল যাতে কম্প্রেস না হয়ে ঠিকমতো বাজে
+    aaptOptions {
+        noCompress "webm"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    
+    // ফুল ক্রোমিয়াম ও প্রক্সি ফিচারের জন্য লেটেস্ট WebKit লাইব্রেরি
+    implementation 'androidx.webkit:webkit:1.10.0'
+    
+    // মাল্টিডেক্স সাপোর্ট
+    implementation 'androidx.multidex:multidex:2.0.1'
+}

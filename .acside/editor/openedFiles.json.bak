@@ -1,0 +1,20 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/ARAFT/app/src/main/kotlin/com/my/apk/MainActivity.kt",
+      "selection": {
+        "end": {
+          "column": 1,
+          "index": 35741,
+          "line": 754
+        },
+        "start": {
+          "column": 1,
+          "index": 35741,
+          "line": 754
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/ARAFT/app/src/main/kotlin/com/my/apk/MainActivity.kt"
+}

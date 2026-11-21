@@ -1,1 +1,1 @@
-# SMART-EARNING-Z
+# Smart-earning-z
